@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "MKHypnosisView.h"
 
 @interface ViewController ()
 
@@ -17,6 +18,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    MKHypnosisView *hypnosisView = [[MKHypnosisView alloc] initWithFrame:self.view.bounds];
+    [self.view addSubview:hypnosisView];
 }
 
 - (void)didReceiveMemoryWarning {

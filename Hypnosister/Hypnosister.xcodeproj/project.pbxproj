@@ -15,6 +15,7 @@
 		7A8AA0B71DA34ED800DA5984 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A8AA0B51DA34ED800DA5984 /* LaunchScreen.storyboard */; };
 		7A8AA0C21DA34ED800DA5984 /* HypnosisterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A8AA0C11DA34ED800DA5984 /* HypnosisterTests.m */; };
 		7A8AA0CD1DA34ED900DA5984 /* HypnosisterUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A8AA0CC1DA34ED900DA5984 /* HypnosisterUITests.m */; };
+		7A8AA0DC1DA3524200DA5984 /* MKHypnosisView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A8AA0DB1DA3524200DA5984 /* MKHypnosisView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		7A8AA0C81DA34ED900DA5984 /* HypnosisterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HypnosisterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A8AA0CC1DA34ED900DA5984 /* HypnosisterUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HypnosisterUITests.m; sourceTree = "<group>"; };
 		7A8AA0CE1DA34ED900DA5984 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7A8AA0DA1DA3524200DA5984 /* MKHypnosisView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKHypnosisView.h; sourceTree = "<group>"; };
+		7A8AA0DB1DA3524200DA5984 /* MKHypnosisView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKHypnosisView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +108,8 @@
 				7A8AA0AB1DA34ED800DA5984 /* AppDelegate.m */,
 				7A8AA0AD1DA34ED800DA5984 /* ViewController.h */,
 				7A8AA0AE1DA34ED800DA5984 /* ViewController.m */,
+				7A8AA0DA1DA3524200DA5984 /* MKHypnosisView.h */,
+				7A8AA0DB1DA3524200DA5984 /* MKHypnosisView.m */,
 				7A8AA0B01DA34ED800DA5984 /* Main.storyboard */,
 				7A8AA0B31DA34ED800DA5984 /* Assets.xcassets */,
 				7A8AA0B51DA34ED800DA5984 /* LaunchScreen.storyboard */,
@@ -202,6 +207,7 @@
 		7A8AA09C1DA34ED800DA5984 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = MK;
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = mukang;
 				TargetAttributes = {
@@ -273,6 +279,7 @@
 				7A8AA0AF1DA34ED800DA5984 /* ViewController.m in Sources */,
 				7A8AA0AC1DA34ED800DA5984 /* AppDelegate.m in Sources */,
 				7A8AA0A91DA34ED800DA5984 /* main.m in Sources */,
+				7A8AA0DC1DA3524200DA5984 /* MKHypnosisView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
