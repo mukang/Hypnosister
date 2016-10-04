@@ -16,6 +16,7 @@
 		7A8AA0C21DA34ED800DA5984 /* HypnosisterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A8AA0C11DA34ED800DA5984 /* HypnosisterTests.m */; };
 		7A8AA0CD1DA34ED900DA5984 /* HypnosisterUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A8AA0CC1DA34ED900DA5984 /* HypnosisterUITests.m */; };
 		7A8AA0DC1DA3524200DA5984 /* MKHypnosisView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A8AA0DB1DA3524200DA5984 /* MKHypnosisView.m */; };
+		7A8AA0DE1DA3591000DA5984 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A8AA0DD1DA3591000DA5984 /* logo.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		7A8AA0CE1DA34ED900DA5984 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7A8AA0DA1DA3524200DA5984 /* MKHypnosisView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKHypnosisView.h; sourceTree = "<group>"; };
 		7A8AA0DB1DA3524200DA5984 /* MKHypnosisView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKHypnosisView.m; sourceTree = "<group>"; };
+		7A8AA0DD1DA3591000DA5984 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +115,7 @@
 				7A8AA0B01DA34ED800DA5984 /* Main.storyboard */,
 				7A8AA0B31DA34ED800DA5984 /* Assets.xcassets */,
 				7A8AA0B51DA34ED800DA5984 /* LaunchScreen.storyboard */,
+				7A8AA0DD1DA3591000DA5984 /* logo.png */,
 				7A8AA0B81DA34ED800DA5984 /* Info.plist */,
 				7A8AA0A71DA34ED800DA5984 /* Supporting Files */,
 			);
@@ -249,6 +252,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A8AA0DE1DA3591000DA5984 /* logo.png in Resources */,
 				7A8AA0B71DA34ED800DA5984 /* LaunchScreen.storyboard in Resources */,
 				7A8AA0B41DA34ED800DA5984 /* Assets.xcassets in Resources */,
 				7A8AA0B21DA34ED800DA5984 /* Main.storyboard in Resources */,
