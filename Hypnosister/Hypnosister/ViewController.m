@@ -22,13 +22,18 @@
     CGRect screenRect = [UIScreen mainScreen].bounds;
     CGRect bigRect = screenRect;
     bigRect.size.width *= 2.0;
-    bigRect.size.height *= 2.0;
+//    bigRect.size.height *= 2.0;
     
     UIScrollView *scrollView = [[UIScrollView alloc] initWithFrame:screenRect];
+    [scrollView setPagingEnabled:YES];
     [self.view addSubview:scrollView];
     
-    MKHypnosisView *hypnosisView = [[MKHypnosisView alloc] initWithFrame:bigRect];
+    MKHypnosisView *hypnosisView = [[MKHypnosisView alloc] initWithFrame:screenRect];
     [scrollView addSubview:hypnosisView];
+    
+    screenRect.origin.x += screenRect.size.width;
+    MKHypnosisView *anotherView = [[MKHypnosisView alloc] initWithFrame:screenRect];
+    [scrollView addSubview:anotherView];
     
     scrollView.contentSize = bigRect.size;
 }
