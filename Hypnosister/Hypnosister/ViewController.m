@@ -19,8 +19,18 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    MKHypnosisView *hypnosisView = [[MKHypnosisView alloc] initWithFrame:self.view.bounds];
-    [self.view addSubview:hypnosisView];
+    CGRect screenRect = [UIScreen mainScreen].bounds;
+    CGRect bigRect = screenRect;
+    bigRect.size.width *= 2.0;
+    bigRect.size.height *= 2.0;
+    
+    UIScrollView *scrollView = [[UIScrollView alloc] initWithFrame:screenRect];
+    [self.view addSubview:scrollView];
+    
+    MKHypnosisView *hypnosisView = [[MKHypnosisView alloc] initWithFrame:bigRect];
+    [scrollView addSubview:hypnosisView];
+    
+    scrollView.contentSize = bigRect.size;
 }
 
 - (void)didReceiveMemoryWarning {
