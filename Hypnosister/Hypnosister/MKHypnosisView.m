@@ -8,12 +8,19 @@
 
 #import "MKHypnosisView.h"
 
+@interface MKHypnosisView ()
+
+@property (nonatomic, strong) UIColor *circleColor;
+
+@end
+
 @implementation MKHypnosisView
 
 - (instancetype)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
     if (self) {
         self.backgroundColor = [UIColor clearColor];
+        _circleColor = [UIColor lightGrayColor];
     }
     return self;
 }
@@ -54,14 +61,15 @@
     }
     
     path.lineWidth = 10;
-    [[UIColor lightGrayColor] setStroke];
+    [self.circleColor setStroke];
     
     [path stroke];
     
-    CGContextRef ctx = UIGraphicsGetCurrentContext();
+    
     
     
     /* 渐进色
+    CGContextRef ctx = UIGraphicsGetCurrentContext();
     CGFloat locations[2] = {0.0, 1.0};
     CGFloat components[8] = {1.0, 0.0, 0.0, 1.0, 1.0, 1.0, 0.0, 1.0};
     CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceRGB();
@@ -74,6 +82,8 @@
     CGColorSpaceRelease(colorSpace);
      */
     
+    /*
+    CGContextRef ctx = UIGraphicsGetCurrentContext();
     UIBezierPath *myPath = [[UIBezierPath alloc] init];
     [myPath moveToPoint:CGPointMake(center.x, center.y - 100)];
     [myPath addLineToPoint:CGPointMake(center.x + 100, center.y + 100)];
@@ -104,6 +114,24 @@
     [logoImage drawInRect:logoFrame];
     
     CGContextRestoreGState(ctx);
+     */
+}
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    float red = (arc4random() % 100) / 100.0;
+    float green = (arc4random() % 100) / 100.0;
+    float blue = (arc4random() % 100) / 100.0;
+    
+    UIColor *randomColor = [UIColor colorWithRed:red
+                                           green:green
+                                            blue:blue
+                                           alpha:1.0];
+    self.circleColor = randomColor;
+}
+
+- (void)setCircleColor:(UIColor *)circleColor {
+    _circleColor = circleColor;
+    [self setNeedsDisplay];
 }
 
 
